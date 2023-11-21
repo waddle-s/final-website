@@ -35,8 +35,8 @@
      #container1 {
       width: 100%;
       background-color: transparent;
+      display: block;
       clear: both;
-      bottom: 20px;
     }
 
     #blockA {
@@ -74,25 +74,8 @@
       padding-top: 10px;
       padding-bottom: 10px;
     }
-    
-    #paragraph1 {
-    background-color: clear;
-    color: white;
-    width: 400px;
-    height: 200px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    position: absolute;
-    top: 900px;
-    left: 250px;
-   }
-    
-    #customHeading {
-    color: white;
-    margin-top: 30px;
-  }
+
+ /* navigation menu */
     
     #menu {
   list-style: none;
@@ -107,17 +90,33 @@
   padding-left: 10px;
 }
 
-#menu a {
+   #menu a {
   text-decoration: none;
   color: #ffffff;
 }
 
-#menu a:hover {
+  #menu a:hover {
    color: black;
 }
+    #section1, #section2, #section3 {
+  height: 600px;  
+  }
     
+    #section1 {
+    background-color: #423711;
+  }
+    #section2 {
+    background-color: #bbb5a7;
+  }
+    #section3 {
+    background-color: #8b2e25;
+  }
+  
+  
     </style>
 </head>
+  
+  <a href="#section1">section</a>
   
 <body>
     <header>
@@ -128,12 +127,24 @@
     <li><a href="">BLAH</a></li>
     <li><a href="">ABOUT</a></li>
        </ul></p>
-  
     </header>
 
     <section>
         <img src="test_photo.jpg" alt="Test Photo"> 
     </section>
+  
+  
+  <div id="section1">
+Your amazing content goes here!
+</div>
+  
+<div id="section2">
+Your amazing content goes here!
+</div>
+  
+<div id="section3">
+Your amazing content goes here!
+</div>
   
   <div id="container1">
       <div id="blockA">
@@ -149,12 +160,6 @@
         lololollollllol
       </div>
     </div>
- 
-  <h1 id="customHeading">This is a heading</h1>
-  
-  <div id="paragraph1">
-    yapapapapayayayapapayayayapayapaya
-  </div>
   
 </body>
 </html>
